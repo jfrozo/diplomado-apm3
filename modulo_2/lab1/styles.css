@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
 body{
 	color: #333;
 	font-family: Arial, "Monaco", sans-serif;
@@ -63,4 +66,24 @@ body{
 		margin: 1em;
 	}
 
+}
+
+@media screen and (max-width: 360px){
+
+
+	#container header h1{
+		color: green;
+		font-family: 'Indie Flower', cursive;
+
+	}
+}
+
+@media screen and (max-width: 320px){
+
+
+	#container header h1{
+		color: yellow;
+		font-family: 'Pacifico', cursive;
+
+	}
 }
