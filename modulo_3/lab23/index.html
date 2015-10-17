@@ -28,6 +28,9 @@
               .controller('studentController', function($scope, $http){
               	var url = "data.json";
               	$http.get(url).success(function(response){
+
+              			console.log(response);
+              			
               		$scope.students = response;
               	});
               });
