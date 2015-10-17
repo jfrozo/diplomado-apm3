@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="reveal-lab14">
+<head>
+	<title>AngularJS First Application</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div ng-controller="lab14Controller">
+		<div ng-show="revealDiv">
+			<p> Hello World , Hola mundo , estamos aqui esperando a aprender!</p>
+		</div>
+
+		<button ng-click="controlButton()" ng-show="revealButton">Ocultar Boton</button>
+
+		<button ng-click="controlButtonV()" ng-show="revealButtonV">Mostrar Boton</button>
+
+	</div>
+	<script type="text/javascript" src="../assets/angular.min.js"></script>
+
+	<script type="text/javascript">
+
+	angular.module('reveal-lab14', [])
+		   .controller('lab14Controller', function($scope){
+		   		$scope.revealDiv = false;
+		   		$scope.revealButton = true;
+		   		$scope.revealButtonV = false;
+
+		   		$scope.controlButton = function(){
+		   			$scope.revealDiv = true;
+		   			$scope.revealButton = false;
+		   			$scope.revealButtonV = true;
+		   		};
+
+		   		$scope.controlButtonV = function(){
+		   			$scope.revealDiv = false;
+		   			$scope.revealButton = true;
+		   			$scope.revealButtonV = false;
+		   		};
+
+		   });
+	</script>
+
+
+</body>
+</html>
