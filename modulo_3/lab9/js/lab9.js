@@ -35,6 +35,8 @@ $(document).ready(function(){
 
 
        $('.button').bind('click', function(event){
+          
+          localStorage.clear();
 
           var validate = new Validate();
 
@@ -174,6 +176,7 @@ $(document).ready(function(){
             );
             $('.inputs').removeClass('error');
             $('.inputs').addClass('success');
+             $('#buttons #info').remove();
           }
           event.preventDefault();
 
