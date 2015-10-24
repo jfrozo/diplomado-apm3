@@ -1,0 +1,18 @@
+{
+  "name": "lab04",
+  "version": "0.1.0",
+  "description": "lab4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/jfrozo/diplomado-apm3"
+  },
+  "author": "John Fitzgerald Rozo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
