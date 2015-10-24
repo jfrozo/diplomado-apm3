@@ -7,18 +7,18 @@ angular.module('initial_spi', ['ngRoute', 'initial_spi.controllers'])
 	*/
 	$routeProvider
 
-	.when('/mobile', {
-	    templateUrl : "views/mobile.html",
-	    controller: 'mobileController'
+	.when('/products', {
+	    templateUrl : "views/products.html",
+	    controller: 'productsController'
 	})
 
-	.when('/smartphone', {
-		templateUrl: "views/smartphone.html",
-		controller: 'smartphoneController'
+	.when('/contacts', {
+		templateUrl: "views/contact.html",
+		controller: 'contactsController'
 	})
 	
 	.otherwise({
 	    redirectTo: '/',
-	    templateUrl: 'otherwise.html'
+	    templateUrl: 'views/otherwise.html'
 	});
  }]);

@@ -1,0 +1,31 @@
+<p>Contacts</p>
+
+
+<div>
+<form name="contactForm" novalidate>
+<table border="0">
+<tr><td>Description:</td><td><input name="descriptions" type="text" ng-model="descriptions" required>
+   <span style="color:#ff2a25" ng-show="contactForm.descriptions.$dirty && contactForm.descriptions.$invalid">
+      <span ng-show="contactForm.descriptions.$error.required">Description is required.</span>
+   </span>
+</td></tr>
+<tr><td>Email: </td><td><input name="email" type="email" ng-model="email" length="100" required>
+<span style="color:#ff2a25" ng-show="contactForm.email.$dirty && contactForm.email.$invalid">
+      <span ng-show="contactForm.email.$error.required">Email is required.</span>
+      <span ng-show="contactForm.email.$error.email">Invalid email address.</span>
+   </span>
+</td></tr>
+<tr><td>Nid: </td><td><input name="nid" type="number" ng-model="nid" length="2" required>
+<span style="color:#ff2a25" ng-show="contactForm.nid.$dirty && contactForm.nid.$invalid">
+      <span ng-show="contactForm.nid.$error.required">Nid is required.</span>
+      <span ng-show="contactForm.nid.$error.number">Invalid number.</span>
+   </span>
+</td></tr>
+<tr><td><button ng-click="reset()">Reset</button></td>
+    <td><button
+    ng-disabled="contactForm.descriptions.$dirty && contactForm.descriptions.$invalid ||
+             contactForm.email.$dirty && contactForm.email.$invalid"
+    ng-click="submit()">Submit</button></td></tr>
+</table>
+</form>
+</div>
