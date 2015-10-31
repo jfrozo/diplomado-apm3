@@ -2,7 +2,8 @@ var gulp = require('gulp'),
 	cssmin = require('gulp-cssmin'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
-    concatCss = require('gulp-concat-css');
+    concatCss = require('gulp-concat-css'),
+    htmlmin = require('gulp-htmlmin');
 
 gulp.task('minify-css',  function(){
   return gulp.src('css/styles.css')
@@ -23,3 +24,9 @@ gulp.task('concat-js', function(){
 });
 
 gulp.task('all',['minify-css','concat-js','rename-css'],function(){});
+
+gulp.task('minify-html', function() {
+  return gulp.src('index.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('dist'))
+});
