@@ -1,0 +1,1 @@
+angular.module("lab1a",[]).controller("lab1aController",function(o){o.name="John F Rozo",o.id="16748805",o.profession="Ingeniero",o.salary=65e4,o.phone=3106995544,o.address="Calle 9 No 111-33"});

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab1b</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/lab1b.js"></script>
+</head>
+<body>
+    <h2>Refuerzo Modulo 3 Lab1b</h2>
+<div ng-app="lab1b" ng-controller="lab1bController">
+<form name="lab1bForm" novalidate>
+    <h1>Filters</h1>
+    <ul>
+      <li ng-repeat="filters in filterlab1">{{ filters }} </li>
+    </ul>
+
+    <h1>Inputs</h1>
+    <ul>
+      <li ng-repeat="inputs in inputlab1">{{ inputs }} </li>
+    </ul>
+</form>
+</div>
+</body>
+</html>

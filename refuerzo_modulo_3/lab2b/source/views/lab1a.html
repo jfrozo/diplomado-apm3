@@ -1,0 +1,21 @@
+<body>
+<h2>Refuerzo Modulo 3 Lab1a</h2>
+<div ng-app="lab1a" ng-controller="lab1aController">
+<form name="lab1aForm" novalidate>
+    <table>
+      <tr><td>Name:</td><td>{{ name | uppercase }}</td></tr>
+      <tr><td>Id:</td><td>{{ id }}</td></tr>
+      <tr><td>Profession:</td><td>{{ profession }}</td></tr>
+      <tr><td>Salary:</td><td>{{ salary | currency: "$" }}</td></tr>
+      <tr><td>Phone:</td><td>{{ phone }}</td></tr>
+      <tr><td>Address:</td><td>{{ address }}</td></tr>
+    </table>
+
+    <table>
+    <tr><td>Enter your Name: <input  type="text" ng-model="name" />
+    <p><span ng-bind="name"></span> !</p>
+    </td></tr>
+    </table>
+</form>
+</div>
+</body>
