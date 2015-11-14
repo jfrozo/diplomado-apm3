@@ -1,0 +1,21 @@
+{
+  "name": "lab9",
+  "description": "Lab 9",
+  "main": "index.js",
+  "authors": [
+    "JFRV"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ngCordova": "~0.1.23-alpha"
+  }
+}
