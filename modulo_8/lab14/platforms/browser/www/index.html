@@ -35,9 +35,11 @@
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>Hello World</title>
     </head>
-    <body ng-app="lab13">
+    <body ng-app="lab14">
 
-    <section ng-controller="lab13Controller">
+    <section ng-controller="lab14Controller">
+        <button ng-click="base64()">Base64</button>
+        <button ng-click="file()">File Location</button>
         <img ng-src="{{ image }}" align="center" width="100px" height="100px">
     </section>
 
@@ -45,6 +47,6 @@
         
         <script type="text/javascript" src="js/angular-ngcordova.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/lab13.js"></script>
+        <script type="text/javascript" src="js/lab14.js"></script>
     </body>
 </html>

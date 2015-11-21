@@ -11,6 +11,10 @@
                         {
                             "xml": "<feature name=\"Camera\"><param name=\"firefoxos-package\" value=\"Camera\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"firefoxos-package\" value=\"Notification\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -23,6 +27,9 @@
         },
         "cordova-plugin-camera": {
             "PACKAGE_NAME": "com.app.lab12"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.app.lab14"
         }
     },
     "dependent_plugins": {},
@@ -55,6 +62,20 @@
             "file": "plugins/cordova-plugin-camera/src/firefoxos/CameraProxy.js",
             "id": "cordova-plugin-camera.CameraProxy",
             "pluginId": "cordova-plugin-camera",
+            "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+            "id": "cordova-plugin-dialogs.notification",
+            "pluginId": "cordova-plugin-dialogs",
+            "merges": [
+                "navigator.notification"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-dialogs/src/firefoxos/notification.js",
+            "id": "cordova-plugin-dialogs.dialogs-impl",
+            "pluginId": "cordova-plugin-dialogs",
             "runs": true
         }
     ]
