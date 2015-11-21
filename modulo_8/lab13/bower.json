@@ -1,0 +1,18 @@
+{
+  "name": "lab13",
+  "description": "LAB13",
+  "main": "index.js",
+  "authors": [
+    "JFRV"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

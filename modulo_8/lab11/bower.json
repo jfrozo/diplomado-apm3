@@ -1,0 +1,23 @@
+{
+  "name": "lab11",
+  "description": "LAB11",
+  "main": "index.js",
+  "authors": [
+    "JFRV"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ngCordova": "~0.1.23-alpha",
+    "angular-route": "~1.4.8",
+    "angular": "~1.4.8"
+  }
+}
