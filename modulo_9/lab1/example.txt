@@ -1,0 +1,13 @@
+http://private-bcbaa-productapp.apiary-mock.com/products/list
+
+
+{
+    "name": "Galaxy Tab",
+    "type": "smartphone",
+    "quantity": 10,
+    "price": 1200000
+}
+
+http://private-bcbaa-productapp.apiary-mock.com/products/update/7
+
+http://private-bcbaa-productapp.apiary-mock.com/products/update/7/jfrozo@hotmail.com

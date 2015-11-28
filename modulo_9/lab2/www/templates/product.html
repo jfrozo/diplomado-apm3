@@ -1,0 +1,13 @@
+<ion-view title="Product">
+    <ion-content padding="'true'" class="has-header">
+        <ion-list >
+            {{ detail.name }}
+            <ion-item menu-close="">id: {{ detail.id }}</ion-item>
+            <ion-item menu-close="">type: {{ detail.type }}</ion-item>
+            <ion-item menu-close="">quantity: {{ detail.quantity }}</ion-item>
+            <ion-item menu-close="">price: {{ detail.price | currency }}</ion-item>              	
+        </ion-list>
+        
+    </ion-content>
+</ion-view>
+

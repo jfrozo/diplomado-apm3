@@ -1,0 +1,12 @@
+<ion-view title="List">
+    <ion-content padding="'true'" class="has-header">
+        <ion-list ng-repeat="product in list">
+            {{ product.name }}:
+            <ion-item menu-close="">id: {{ product.id }}</ion-item>
+            <ion-item menu-close="">type: {{ product.type }}</ion-item>
+            <ion-item menu-close="">quantity: {{ product.quantity }}</ion-item>
+            <ion-item menu-close="">price: {{ product.price | currency }}</ion-item>              	
+        </ion-list>
+        
+    </ion-content>
+</ion-view>

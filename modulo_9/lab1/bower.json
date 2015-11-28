@@ -1,0 +1,24 @@
+{
+  "name": "lab1",
+  "description": "lab1",
+  "main": "",
+  "moduleType": [],
+  "authors": [
+    "JFRV"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "angular-resource": "~1.4.8"
+  }
+}
