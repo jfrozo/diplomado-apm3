@@ -173,6 +173,7 @@ angular.module('app.controllers', ['ionic'])
 .controller('rangeCtrl', function($scope) {
 
 	$scope.value = 10
+	$scope.value1 = 0
 
 })
    
